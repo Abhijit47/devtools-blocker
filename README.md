@@ -77,6 +77,14 @@ npm run dev   # watch mode
 npm run build # generate dist and types
 ```
 
+## Testing
+
+```bash
+npm test
+```
+
+Tests run with Vitest (jsdom) and currently pass.
+
 ## License
 
 MIT
