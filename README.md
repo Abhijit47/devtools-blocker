@@ -1,5 +1,3 @@
-yarn add devtools-blocker
-
 # devtools-blocker
 
 React hook to block common DevTools shortcuts and right-click context menu. Built in TypeScript, ships with CJS/ESM and type definitions.
@@ -10,6 +8,8 @@ React hook to block common DevTools shortcuts and right-click context menu. Buil
 npm install devtools-blocker
 # or
 yarn add devtools-blocker
+# or
+pnpm add devtools-blocker
 ```
 
 ## Quick usage (client component)
@@ -56,6 +56,13 @@ export default function RootLayout({ children }: PropsWithChildren) {
 
 - Prevents right-click context menu
 - Blocks common DevTools shortcuts: F12, Ctrl/Cmd+Shift+I/J/C/K, Cmd+Opt+U
+- Works on Windows, macOS, Linux
+- Covers various keyboard layouts (QWERTY, AZERTY, QWERTZ)
+- Handles both physical and virtual keyboards
+- Accounts for modifier keys (Shift, Ctrl, Alt, Meta)
+- Ignores inputs in text fields, textareas, and contenteditable elements
+- Cleans up event listeners on unmount
+- Lightweight (~0.5 KB minified + gzipped)
 
 ## Notes
 
