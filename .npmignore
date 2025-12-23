@@ -1,0 +1,29 @@
+# Source files
+src/
+tsconfig.json
+
+# Development
+.git/
+.gitignore
+.vscode/
+.idea/
+
+# Tests
+*.test.ts
+*.spec.ts
+__tests__/
+coverage/
+
+# CI/CD
+.github/
+.travis.yml
+
+# Documentation (keep README.md)
+docs/
+
+# Examples
+examples/
+
+# Misc
+*.log
+.DS_Store

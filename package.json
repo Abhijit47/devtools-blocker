@@ -1,0 +1,55 @@
+{
+  "name": "devtools-blocker",
+  "version": "1.0.0",
+  "description": "A TypeScript-based React hook library",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "keywords": [
+    "react",
+    "hook",
+    "typescript",
+    "devtools",
+    "devtools-blocker",
+    "security",
+    "browser",
+    "context-menu",
+    "keyboard-shortcuts"
+  ],
+  "author": "",
+  "license": "MIT",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.0",
+    "react": "^18.2.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abhijit47/devtools-blocker.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Abhijit47/devtools-blocker/issues"
+  },
+  "homepage": "https://github.com/Abhijit47/devtools-blocker#readme"
+}
